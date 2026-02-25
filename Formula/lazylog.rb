@@ -11,9 +11,11 @@ class Lazylog < Formula
   sha256 "ac9249d4458822fb66a2b936dfd5d26ec46f95348ed582946ae113a1ced38bc2"
 
   def install
-    # Homebrew automatically downloads and extracts the tar.gz archive.
-    # We just need to install the extracted 'lazylog' binary into the bin folder.
+    # Install the main binary
     bin.install "lazylog"
+    
+    # Create a symlink named 'zl' pointing to 'lazylog'
+    bin.install_symlink "lazylog" => "zl"
   end
 
   test do
