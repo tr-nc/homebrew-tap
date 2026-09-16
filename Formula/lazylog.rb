@@ -1,14 +1,14 @@
 class Lazylog < Formula
   desc "Terminal-based log viewer"
   homepage "https://github.com/tr-nc/lazylog"
-  version "0.11.0"
+  version "0.11.1"
 
   # Points to the precompiled binary in the GitHub releases panel
-  url "https://github.com/tr-nc/lazylog/releases/download/v0.11.0/lazylog-macos.tar.gz"
+  url "https://github.com/tr-nc/lazylog/releases/download/v0.11.1/lazylog-macos.tar.gz"
   
   # IMPORTANT: You must calculate and insert the actual SHA256 hash of the lazylog-macos.tar.gz file.
   # You can find this by running: shasum -a 256 lazylog-macos.tar.gz
-  sha256 "54528bae77c5c4db072875a35ba9f586be265d89cc1566861cdb4ee6fcaa4fb5"
+  sha256 "d6c4c1a6d00aa4e8d00ad336790debb4cb3f2908958fe1bdc445db4022b63dd3"
 
   def install
     # Install the main binary
